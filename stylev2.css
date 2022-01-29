@@ -99,7 +99,7 @@ body{
 .custom-btn:hover{
 	background-color: #2665c233;
 	border: solid #2665c2 5px;
-	margin: -5px;
+	margin: 2px 3px;
 	color: white;
 	-webkit-box-shadow: inset 0 0 15px #2665c2;
     -moz-box-shadow: inset 0 0 15px #2665c2;
