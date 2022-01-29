@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+	/* Base font size */
+	font-size: 10px;   
+
+	/* Set neon color */
+	--neon-text-color: #f40;
+}
+
+h3, a, h1{
+	color: white;
+	text-align: center;
+}
+
+h3{
+	margin-top: 100px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h5, h8{
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.red-ending{
+	font-family: 'Exo 2', sans-serif;
+	margin-top: 300px;
+	font-size: 120px;
+	text-align: center;
+	color: transparent;
+	font-weight: 200;
+	font-style: italic;
+	animation: flicker 1.5s infinite alternate;   
+}
+
+h8{
+	font-size: 13.5px;
+	margin-bottom: -320px;
+	padding: 285px;
+}
+
+body{
+	background: black;
+	overflow: hidden;
+}
+
+.top-fade{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 300px;
+	background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8));
+	z-index: -1;
+}
+
+.bottom-fade{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+	z-index: -1;
+}
+
+.side-fade{
+	left: 0;
+	top: 0;
+	background-color: rgba(18, 18, 18, 0.8);
+	-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+	position: fixed;
+	width: 1000px;
+	height: 100%;
+	z-index: -1;
+}
+
+.landing-desc{
+	margin-left: -100px;
+}
+
+.custom-btn{
+	text-decoration: none;
+	border: solid white 1px;
+	padding: 15px 20%;
+	margin: 7px 3px;
+	font-size: 20px;
+	background: none;
+	font-style: italic;
+	color: white;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+	transition: 0.2s;
+}
+
+.custom-btn:hover{
+	background-color: #2665c233;
+	border: solid #2665c2 5px;
+	color: white;
+	-webkit-box-shadow: inset 0 0 15px #2665c2;
+    -moz-box-shadow: inset 0 0 15px #2665c2;
+    box-shadow: inset 0 0 15px #2665c2;
+    box-shadow: 0 0 5px #2665c2;
+}
+
+.answear-btns{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 100px;
+}
+
+.big_image{
+	position: absolute;
+	width: 100%;
+    left:0px;
+    top:0px;
+    z-index: -5;
+}
+
+.left_image{
+	position: absolute;
+	width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -6;
+}
+
+.right_image{
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+	position: absolute;
+	width: 100%;
+    right: -955px;
+    top: 0px;
+    z-index: -5;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+  }
+
+@keyframes flicker {
+
+0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+	
+	text-shadow:
+		0rem 0rem 1.5px #fff,
+		-0.2rem -0.2rem 1rem #fff,
+		0.2rem 0.2rem 1rem #fff,
+		0 0 2rem var(--neon-text-color),
+		0 0 4rem var(--neon-text-color),
+		0 0 6rem var(--neon-text-color),
+		0 0 8rem var(--neon-text-color),
+		0 0 10rem var(--neon-text-color);
+}
+
+20%, 24%, 55% {        
+	text-shadow: none;
+	box-shadow: none;
+}    
+}
